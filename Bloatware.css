@@ -1,0 +1,19 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-text > span {
+      margin-right: -0.19em;
+      font-style: italic;
+  }
+
+.text-2xl {
+    max-width: 90%; /* Sesuaikan dengan kebutuhan Anda */
+    margin: 0 auto; /* Untuk membuat teks tetap berada di tengah */
+}
+
+.text-lg{
+    margin: 0;
+}
