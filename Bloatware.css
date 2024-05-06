@@ -17,3 +17,8 @@
 .text-lg{
     margin: 0;
 }
+
+.test1{
+    color: white;
+    -webkit-text-stroke-width:2px black;
+}
