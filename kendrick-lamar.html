@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendrick Lamar</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="Bloatware.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!--Tailwinds -->
+    <script src="https://cdn.tailwindcss.com/config/defaultConfig.stub.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-800">
+
+<!-- NAVBAR STARTS  -->
+<nav class="border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <div class="nav-text">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Music</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-blue-500 text-blue-500 light:text-blue-500">Project</span>
+        </div>   
+      </a>
+      <a href="#" class="flex items-right">
+      <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </button>   
+      <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+      
+      <div class="hidden w-full" id="navbar-hamburger">
+        <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+          <li>
+            <a href="home.html" class="block py-2 px-3 text-white bg-blue-700 rounded dark:bg-blue-600" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="artist.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Artists</a>
+          </li>
+          <li>
+            <a href="premium.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-300 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Premium</a>
+          </li>
+          <li>
+            <a href="About.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">About The Creator</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- NAVBAR ENDS -->
+
+<div class="pt-18">
+    <a class="mx-4 flex flex-col items-center bg-white rounded-lg md:flex-row md:max-w-xl dark:bg-gray-800">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="img/kendrik-lamar.jpg" alt="">
+        <div class="flex flex-col justify-center px-6">
+            <h5 class="mb-4 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Kendrick Lamar</h5>
+        </div>
+    </a>
+</div>
+
+<!-- PARAGRAPH STARTS -->
+<div class="mx-4 pt-8">
+    <p class="mb-3 text-gray-500 whitespace-pre-line dark:text-gray-100">The Drake–Kendrick Lamar feud is an ongoing rap feud between Canadian rapper Drake and American rapper Kendrick Lamar.</p>
+    <p class="text-gray-500 dark:text-gray-400">The Drake–Kendrick Lamar feud is an ongoing rap feud between Canadian rapper Drake and American rapper Kendrick Lamar. The conflict escalated in March 2024 after the release of "Like That" by Future and Metro Boomin, featuring Lamar.
+
+        Their first collaboration was in 2011, on Drake's album Take Care, with another collaboration a year later on Lamar’s album Good Kid, M.A.A.D City. Lamar later dissed Drake and several other rappers on the 2013 song "Control" by Big Sean, saying he wanted to "murder" them in music. He clarified that his verse was intended to be seen as "friendly competition".</p>
+    
+</div>
+<!-- PARAGRAPH ENDS -->
+
+<div class="pt-4 mx-4 justify-center">
+  <video class="w-80 h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" autoplay controls>
+    <source src="img/meet the grahams.mp4" type="video/mp4">
+  </video>  
+</div>
+
+
+<!-- LISTS STARTS -->
+<div class="pt-8 mx-4">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Artist Record:</h2>
+    <ul class=" pt-2 space-y-4 text-gray-500 list-disc list-inside dark:text-gray-100">
+      <li>
+        2011-2014
+        <ol class="ps-5 mt-2 space-y-1">
+            <li>
+            <p class="text-gray-500 whitespace-pre-line dark:text-gray-400">
+                Drake and Lamar began on favorable terms. The pair's first collaboration was seen in the form of Lamar's appearance on "Buried Alive Interlude", off of Drake's 2011 studio album Take Care. Their relationship continued to develop amicably after Lamar opened for Drake alongside ASAP Rocky during Drake's 2012 Club Paradise Tour. Later that year, both Lamar and Drake also made an appearance on ASAP Rocky's "Fuckin' Problems". In 2012, Drake featured on Lamar's hit single "Poetic Justice".
+
+                On August 14, 2013, Lamar took shots at Drake and several other rappers on Big Sean's "Control", claiming that he "had love" for all of them, but was trying to "murder" them in the rap scene. In an interview with Billboard two weeks later, Drake dismissed Lamar's verse, stating: "It just sounded like an ambitious thought to me. That's all it was. I know good and well that Lamar's not murdering me, at all, in any platform". In September, Drake joined Elliott Wilson's live interview series #CRWN. When prompted about the "Control" verse, Drake replied that Lamar's in-person attitude contradicted the sentiments of his "Control" verse. "I saw him five days later at the VMAs and it was all love... If it's really 'fuck everybody' then it needs to be 'fuck everybody'. It can't just be halfway".
+                
+                On September 24, 2013, Drake released his third studio album Nothing Was the Same. Multiple outlets interpreted the first verse on "The Language", the album's fifth single, as a response to Lamar's "Control" verse. Birdman, head of Drake's then-label Cash Money Records, stated the song was not about Lamar. In October, during the 2013 BET Hip Hop Awards' fifth cypher, Lamar rapped: "Nothing's been the same since they dropped 'Control' / And tucked a sensitive rapper back in his pajama clothes". These lines were popularly interpreted as further disses toward Drake and a response to "The Language", especially as Lamar appears to reference Drake's Nothing Was the Same. Drake later addressed Lamar's cypher verse and "The Language" in a December cover story for Vibe, mocking the idea of them being "buddy-buddy" and stating he "stood [his] ground" in response to "Control". Nevertheless, Drake maintained that "The Language" wasn't targeted towards Lamar. Drake also praised Lamar as a "genius in his own right" and insisted there was "no real issue".
+                
+                In late October 2014, Jay Rock released "Pay For It" featuring Lamar. The latter's verse contained lines seemingly taking shots at Drake whilst referencing lyrics from "The Language". However, in an interview with Dazed published on November 3, 2014, Lamar clarified: "I got no beef with Drake". On November 4, 2014, Lamar made an appearance on WWPR-FM's The Breakfast Club and further defused the prospect of a 'beef' between himself and Drake: "It wasn’t no issue from the jump. I think people talk about beef… it’s just a whole ‘nother dynamic. I can’t see myself going bar for bar with Drake. We’re two different types of artists."
+            </p>
+            </li>
+        </ol>
+      </li>
+        <li>
+          2016-2018
+          <ol class="ps-5 mt-2 space-y-1">
+              <li>
+              <p class="text-gray-500 whitespace-pre-line dark:text-gray-400">
+                Drake and Lamar began on favorable terms. The pair's first collaboration was seen in the form of Lamar's appearance on "Buried Alive Interlude", off of Drake's 2011 studio album Take Care. Their relationship continued to develop amicably after Lamar opened for Drake alongside ASAP Rocky during Drake's 2012 Club Paradise Tour. Later that year, both Lamar and Drake also made an appearance on ASAP Rocky's "Fuckin' Problems". In 2012, Drake featured on Lamar's hit single "Poetic Justice".
+
+                On August 14, 2013, Lamar took shots at Drake and several other rappers on Big Sean's "Control", claiming that he "had love" for all of them, but was trying to "murder" them in the rap scene. In an interview with Billboard two weeks later, Drake dismissed Lamar's verse, stating: "It just sounded like an ambitious thought to me. That's all it was. I know good and well that Lamar's not murdering me, at all, in any platform". In September, Drake joined Elliott Wilson's live interview series #CRWN. When prompted about the "Control" verse, Drake replied that Lamar's in-person attitude contradicted the sentiments of his "Control" verse. "I saw him five days later at the VMAs and it was all love... If it's really 'fuck everybody' then it needs to be 'fuck everybody'. It can't just be halfway".
+
+                On September 24, 2013, Drake released his third studio album Nothing Was the Same. Multiple outlets interpreted the first verse on "The Language", the album's fifth single, as a response to Lamar's "Control" verse. Birdman, head of Drake's then-label Cash Money Records, stated the song was not about Lamar. In October, during the 2013 BET Hip Hop Awards' fifth cypher, Lamar rapped: "Nothing's been the same since they dropped 'Control' / And tucked a sensitive rapper back in his pajama clothes". These lines were popularly interpreted as further disses toward Drake and a response to "The Language", especially as Lamar appears to reference Drake's Nothing Was the Same. Drake later addressed Lamar's cypher verse and "The Language" in a December cover story for Vibe, mocking the idea of them being "buddy-buddy" and stating he "stood [his] ground" in response to "Control". Nevertheless, Drake maintained that "The Language" wasn't targeted towards Lamar. Drake also praised Lamar as a "genius in his own right" and insisted there was "no real issue".
+
+                In late October 2014, Jay Rock released "Pay For It" featuring Lamar. The latter's verse contained lines seemingly taking shots at Drake whilst referencing lyrics from "The Language". However, in an interview with Dazed published on November 3, 2014, Lamar clarified: "I got no beef with Drake". On November 4, 2014, Lamar made an appearance on WWPR-FM's The Breakfast Club and further defused the prospect of a 'beef' between himself and Drake: "It wasn’t no issue from the jump. I think people talk about beef… it’s just a whole ‘nother dynamic. I can’t see myself going bar for bar with Drake. We’re two different types of artists."
+              </p>
+              </li>
+          </ol>
+        </li>
+        <li>
+          2015-2022
+          <ol class="ps-5 mt-2 space-y-1">
+              <li>
+              <p class="text-gray-500 whitespace-pre-line dark:text-gray-400">
+                Despite Drake and Lamar's prior dismissals, their feud continued in the form of sneak disses Billboard identified as "subtle shots fired from both sides, but nothing groundbreaking". The songs "Darkside / Gone" and "Deepwater" from Dr. Dre's 2015 studio album Compton both featured Lamar verses with lines interpreted as Drake disses. On March 23, 2017, Lamar released "The Heart Part 4", popularly perceived as a diss track towards Big Sean or Drake. Lamar would later explicitly reference lines from "The Heart Part 4" in his 2024 Drake diss track "Euphoria", seemingly confirming the perception of the former track as a Drake diss.
+
+                Marc Griffin, writing a timeline of the feud for Vibe, referred to this time as "the Cold War between the two men".
+              </p>
+              </li>
+          </ol>
+        </li>
+        <li>
+          2023-Present
+          <ol class="ps-5 mt-2 space-y-1">
+              <li>
+              <p class="text-gray-500 whitespace-pre-line dark:text-gray-400">
+                "First Person Shooter" and "Like That"
+                In October 2023, J. Cole suggested himself, Drake, and Lamar were part of the "Big Three" greatest rappers in modern hip-hop on Drake's "First Person Shooter". In March 2024, Lamar responded unfavorably to the 'Big Three' notion on his, Metro Boomin and Future's single, "Like That", dissing Cole and Drake whilst rhyming "motherfuck the big three, nigga, it's just big me". The diss prompted Cole to release a response song, "7 Minute Drill", in which he criticizes Lamar's 2015 album To Pimp a Butterfly. However, in the days after he publicly apologized onstage for releasing the song and removed it from streaming services. Drake did not directly acknowledge "Like That" on tour, simply stating at one concert: "I got my head up high... and I know no matter what there's not another nigga on this Earth that could ever fuck with me".
+
+                "Push Ups" and "Taylor Made Freestyle"
+                On April 13, 2024, early versions of Drake's "Push Ups" were leaked online. The song serves as a response to Lamar's verse on "Like That"; Drake claims multiple artists are better than Lamar, including 21 Savage, Travis Scott, and SZA. It also disses several people for siding against Drake after Lamar's verse came out, including Metro Boomin, Future, the Weeknd, and Rick Ross. It also mocks Lamar's short stature (who stands at 5’5”), contrasting it with Lamar's claims of being the 'Big Stepper'. Ross responded to the leaked versions of the "Push Ups" diss by releasing the track "Champagne Moments" on April 15. Drake officially released "Push Ups" on April 19.
+
+                The same day as the official release of "Push Ups", Drake also released "Taylor Made Freestyle", another diss targeted at Lamar. The song featured AI-generated vocals imitating the rappers Tupac Shakur and Snoop Dogg. Shakur's estate disapproved of the AI-generated verse and threatened Drake to pull the song from social media, citing the violation of Shakur's personality rights and the decision to diss a friend of the estate. Drake also accuses Lamar of not responding to "Push Ups" because Lamar did not want to stop Taylor Swift's new album, The Tortured Poets Department, from charting higher; Drake criticized Lamar for collaborating with Swift and other pop artists. "Taylor Made Freestyle" was subsequently taken down by Drake on April 26, 2024.
+
+                "Euphoria" and "6:16 in LA"
+                On April 30, 2024, Lamar released a diss track named "Euphoria" in response to Drake. Euphoria is the name of the TV show of which Drake serves as an executive producer. Vulture described the track as Lamar showing his "pure hatred" towards Drake. In the track, Lamar criticizes Drake's parenting, saying: "I got a son to raise, but I can see you know nothin' 'bout that". He also claims that Drake's abs were made through plastic surgery.
+
+                On May 3, 2024, three days after "Euphoria", Lamar posted an Instagram reel captioned "6:16 in LA", containing a new diss track, similar to how Drake released "Taylor Made Freestyle". The title parodies Drake's "[timestamp] in [city]" songs, like "8AM in Charlotte". The track was also produced by Taylor Swift's producer, Jack Antonoff, which Vulture guessed was a reference to Drake's comments on "Taylor Made Freestyle". Fans speculated that the cover references the murder trial of O.J. Simpson with a glove on the cover, alluding to the glove presented as evidence during the trial, as well as the title referencing June 16, the day of Nicole Brown Simpson's funeral, and the submission date of the case. The single released weeks after O.J. Simpson's passing on April 10, 2024.
+
+                "Family Matters" and "Meet the Grahams"
+                On May 3, Drake released "Family Matters", a response to "Euphoria" and "6:16 in LA". In the track, Drake alleges that one of Lamar's children is biologically from Dave Free, Lamar's friend and label co-founder. He also claims Lamar is a domestic abuser and unfaithful in his relationship with his fiancée Whitney Alford. The track is also directed at ASAP Rocky and Metro Boomin, who collaborated with Future on the April 12 diss track "Show of Hands". Additionally, when Drake posted "Family Matters" on Instagram, he also dropped a short parody remix of "Buried Alive Interlude".
+
+                20 minutes later, Lamar released another diss track aimed at Drake, titled "Meet the Grahams". On the track, Lamar speaks directly to members of Drake's family, telling his son Adonis that he is sorry that his father is Drake. Lamar alleges that Drake is hiding a second child (a daughter), that he is sexually attracted to minors, and that he is running a sex trafficking ring out of his mansion. Lamar also disses Drake's OVO label affiliates — claiming they are sex offenders harbored by Drake — and security guard. He predicts that Drake's mansion "is 'bout to get raided too", referring to the recent federal raids on Sean Combs' mansion as part of an unrelated investigation.
+
+                Lamar revealing an alleged second child came in the context of Pusha T's 2018 diss track "The Story of Adidon", in which Pusha T publicly revealed that Drake was hiding a son named Adonis. Drake responded to Lamar on Instagram: "Nahhhh hold on can someone find my hidden daughter pls and send her to me…these guys are in shambles", followed by multiple laughing emojis. Charles Holmes of The Ringer wrote that with "Family Matters" and "Meet the Grahams", "the Doomsday Machine has been activated", and the feud was no longer inconsequential.
+
+                "Not Like Us" and "The Heart Part 6"
+                On May 4, 2024, Kendrick Lamar released "Not Like Us". In the track, Lamar more explicitly refers to Drake and members of his inner circle as pedophiles, saying: "Say, Drake, I hear you like 'em young / You better not ever go to cell block one". Baka, a member of Drake's security team, is mentioned in the line "Baka got a weird case, why is he around?", referring to when Baka was arrested and charged with "sex trafficking, assault, and robbery of a 22 year old woman he allegedly forced into prostitution" in 2014. He was only convicted of an assault charge and an unrelated weapons charge. Lamar also says that using an A.I. version of Tupac's voice would bring Drake disrespect in the Bay Area: "I think that Oakland show gon' be your last stop, nigga", and hints at having made many future diss tracks. The cover art for the track was a satellite image of Drake's mansion labeled with pins representing sexual predators.
+
+                On May 5, 2024, Drake released "The Heart Part 6". The title references Lamar's "The Heart" series, picking up after Lamar's critically acclaimed "The Heart Part 5". In the track, Drake denies the pedophile and grooming
+              </p>
+              </li>
+          </ol>
+        </li>
+    </ul>
+    
+</div>
+<!-- LISTS ENDS -->
+
+<!-- ALBUM STARTS -->
+<!-- ALBUMS ENDS -->
+
+<!-- FOOTER START -->
+<div class="pt-20">
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Group 2 4SE1</a>. All Rights Reserved To The Creator.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+              <a href="About-Creator.html" class="hover:underline me-4 md:me-6">About The Creator</a>
+          </li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- FOOTER END -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="bloatware.js"></script>
+  </body>
+  </html>
